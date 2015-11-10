@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <ImageView
+        android:id="@+id/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="center" />
+
+    <RelativeLayout
+        android:id="@+id/background_part"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/sand"
+        android:layout_gravity="center_horizontal|bottom">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:id="@+id/page_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/smaller" />
+
+        <TextView
+            android:id="@+id/page_header"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/page_image"
+            android:layout_marginBottom="45dp"
+            android:text="Header Blue"
+            android:lines="2"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            >
+
+        <Button
+            android:id="@+id/page_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Click me"
+            />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
